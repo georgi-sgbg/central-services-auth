@@ -7,7 +7,7 @@ const Encoding = require('@mojaloop/central-services-shared').Encoding
 exports.name = 'basic'
 
 exports.authenticate = ({validate}) => {
-  return function (request, reply) {
+  return (request, reply) => {
     const headers = request.headers
     const authorization = headers.authorization
 
